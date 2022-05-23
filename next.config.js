@@ -1,7 +1,8 @@
 module.exports = {
-  experimental: {
-    runtime: 'nodejs',
-    serverComponents: true,
-    reactRoot: true
-  },
+  async rewrites() {
+    return [{
+      source: '/bla',
+      destination: '/blablabla',
+    }]
+  }
 }
